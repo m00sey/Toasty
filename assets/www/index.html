@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta name="viewport" content="width=320; user-scalable=no" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title>PhoneGap</title>
+	  <link rel="stylesheet" href="master.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	  <script type="text/javascript" charset="utf-8" src="phonegap.0.9.5.js"></script>
+	  <script type="text/javascript" charset="utf-8" src="phonegap-toast.js"></script>
+	  <script type="text/javascript">
+			var ready = function() {
+			    var win = function () {      
+			      //console.log("registered ");
+			    },
+			     fail = function() {
+			      alert('Fail');
+			    };
+			
+			    window.plugins.ToastPlugin.show_long('bar');      
+			  };
+	  
+	   document.addEventListener('deviceready', ready, false);
+	  </script>
+  </head>
+  <body>
+    <button onclick="window.plugins.ToastPlugin.show_long('bar')">foo</button>
+  </body>
+</html>
