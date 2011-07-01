@@ -1,3 +1,6 @@
+if (!PhoneGap.hasResource("tp")) {
+PhoneGap.addResource("tp");
+
 var ToastPlugin = function() {
 };
 
@@ -16,13 +19,8 @@ ToastPlugin.prototype.show_short = function(message, win, fail) {
  * </ul>
  */
 PhoneGap.addConstructor(function() {   
-  // Register the javascript plugin with PhoneGap
-  PhoneGap.addPlugin('ToastPlugin', new ToastPlugin()); 
-
-  // Register the native class of plugin with PhoneGap
-  navigator.app.addService("ToastPlugin", "com.chariotsolutions.toast.plugin.ToastPlugin"); 
-//  navigator.app.addService("ToastPlugin", "com.chariotsolutions.toast.plugin.ToastPlugin"); 
-//  navigator.app.addService("ToastPlugin", "com.chariotsolutions.toast.plugin.ToastPlugin"); 
-//  navigator.app.addService("ToastPlugin", "com.chariotsolutions.toast.plugin.ToastPlugin"); 
-//  navigator.app.addService("ToastPlugin", "com.chariotsolutions.toast.plugin.ToastPlugin"); 
+    if (typeof navigator.tp === "undefined") {
+        navigator.tp = new ToastPlugin();
+    }
 });
+}

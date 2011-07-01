@@ -16,13 +16,13 @@
 			      alert('Fail');
 			    };
 			
-			    window.plugins.ToastPlugin.show_long('bar');      
+			    navigator.tp.show_long('bar');      
 			  };
 	  
-	   document.addEventListener('deviceready', ready, false);
+	   document.addEventListener('deviceready', ready, false);  
 	  </script>
   </head>
   <body>
-    <button onclick="window.plugins.ToastPlugin.show_long('bar')">foo</button>
+    <button onclick="navigator.tp.show_long('bar')">foo</button>
   </body>
 </html>

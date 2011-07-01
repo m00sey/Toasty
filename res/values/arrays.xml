@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="plugins">
+        <item>com.chariotsolutions.toast.plugin.ToastPlugin</item>
+    </array>
+</resources>
