@@ -36,7 +36,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <meta-data android:name="plugin.ToastPlugin" android:value="com.chariotsolutions.toast.plugin.ToastPlugin"/>     
+        <meta-data android:name="com.phonegap.plugins" android:resource="@array/plugins"/>     
     </application>
 </manifest>
