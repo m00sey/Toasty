@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <array name="plugins">
-        <item>com.chariotsolutions.toast.plugin.ToastPlugin</item>
+        <item>a/b</item>
+        <item>/</item>
+        <item>a/</item>
+        <item>/b</item>
+        <item></item>
+        <item>f</item>
+        <item>faaa/aaaaa/aaaa</item>
+        <item>a//////a</item>
+        <item>//////aa/a</item>
+        <item>ToastPlugin/com.chariotsolutions.toast.plugin.ToastPlugin</item>
     </array>
 </resources>
