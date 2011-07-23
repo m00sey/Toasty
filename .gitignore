@@ -1,2 +1,3 @@
 dist/
-target/
+bin/
+.DS_Store
