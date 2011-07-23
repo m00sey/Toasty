@@ -5,7 +5,7 @@
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     <title>PhoneGap</title>
 	  <link rel="stylesheet" href="master.css" type="text/css" media="screen" title="no title" charset="utf-8">
-	  <script type="text/javascript" charset="utf-8" src="phonegap.0.9.5.js"></script>
+	  <script type="text/javascript" charset="utf-8" src="phonegap-1.0.0rc2.js"></script>
 	  <script type="text/javascript" charset="utf-8" src="phonegap-toast.js"></script>
 	  <script type="text/javascript">
 			var ready = function() {
@@ -16,13 +16,13 @@
 			      alert('Fail');
 			    };
 			
-			    navigator.tp.showLong('bar');      
+			    navigator.toast.showLong('bar');      
 			  };
 	  
 	   document.addEventListener('deviceready', ready, false);  
 	  </script>
   </head>
   <body>
-    <button onclick="navigator.tp.showLong('bar')">foo</button>
+    <button onclick="navigator.toast.showShort('bar');">foo</button>
   </body>
 </html>
