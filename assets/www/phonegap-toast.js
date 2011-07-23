@@ -1,3 +1,4 @@
+/*global PhoneGap*/
 var Toasty = function() {
 };
 
@@ -9,4 +10,4 @@ Toasty.prototype.showShort = function(message, win, fail) {
   PhoneGap.exec(win, fail, "Toasty", "show_short", [message]);
 };
 
-navigator.tp = new Toasty();
+navigator.toast = new Toasty();
