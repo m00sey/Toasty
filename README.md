@@ -6,6 +6,10 @@ Shows an Android Toast Notification
 * navigator.toast.showShort(message);
 * navigator.toast.showLong(message);
 
+Cancel an Android Toast Notification
+
+* navigator.toast.cancel();
+
 Supported Platforms
 --------------------
 * Android
