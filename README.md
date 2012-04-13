@@ -21,11 +21,13 @@ Building
  * Apache Ant should be installed an on your path
  * The Android SDK must be installed installed.
 
-If your Android SDK is in /usr/local/android, create build.properties and set sdk.dir=/path/to/your/sdk
-
+Ant needs to know the location of the Android SDK.  The android tool will create a local.properties file.
+	
+	$ android update project -p .
+	
 ### Build and install the Sample Application
 
-    $ ant install
+    $ ant debug install
 
 ### Run the Sample Application
 
@@ -38,9 +40,7 @@ On the phone or simulator run **Toastify**
 Adding Toasty to your project
 ------------------------------
 
-These instructions assume your project is using PhoneGap-1.0.
-
-phonegap-toast.js can be modified to work with older version of PhoneGap if necessary. This is an exercise left to the reader.
+These instructions assume your project is using PhoneGap-1.6
 
     $ cp dist/phonegap-toast.js into $YOUR_PROJECT/assets/www/
     $ cp dist/phonegap-toast.jar into $YOUR_PROJECT/lib
