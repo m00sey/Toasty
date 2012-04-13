@@ -1,3 +1,5 @@
 dist/
 bin/
 .DS_Store
+gen
+local.properties
