@@ -1,6 +1,6 @@
 package com.chariotsolutions;
 
-import com.phonegap.*;
+import org.apache.cordova.*;
 import android.os.Bundle;
 
 public class Toastify extends DroidGap {
