@@ -1,10 +1,11 @@
 package com.chariotsolutions.toast.plugin;
 
+import android.app.Activity;
 import android.util.Log;
 import android.widget.Toast;
-import com.phonegap.api.Plugin;
-import com.phonegap.api.PluginResult;
-import com.phonegap.api.PluginResult.Status;
+import org.apache.cordova.api.Plugin;
+import org.apache.cordova.api.PluginResult;
+import org.apache.cordova.api.PluginResult.Status;
 import org.json.JSONArray;
 import org.json.JSONException;
 
@@ -41,7 +42,7 @@ public class ToastPlugin extends Plugin {
                 this.ctx.runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-                        toast = Toast.makeText(ctx, toastMessage, Toast.LENGTH_LONG);
+                        toast = Toast.makeText(((Activity)ctx), toastMessage, Toast.LENGTH_LONG);
                         toast.show();
                     }
                 });
@@ -49,7 +50,7 @@ public class ToastPlugin extends Plugin {
                 this.ctx.runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-                        toast = Toast.makeText(ctx, toastMessage, Toast.LENGTH_SHORT);
+                        toast = Toast.makeText(((Activity)ctx), toastMessage, Toast.LENGTH_SHORT);
                         toast.show();
                     }
                 });
