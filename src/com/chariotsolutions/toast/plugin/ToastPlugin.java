@@ -23,7 +23,7 @@ public class ToastPlugin extends Plugin {
         Log.d(TAG, pluginAction);
         if (pluginAction.equals(CANCEL_ACTION)) {
 
-            this.ctx.runOnUiThread(new Runnable() {
+            cordova.getActivity().runOnUiThread(new Runnable() {
                 @Override
                 public void run() {
                     if (toast != null) toast.cancel();
@@ -39,7 +39,7 @@ public class ToastPlugin extends Plugin {
 
             if (pluginAction.equals(LONG_TOAST_ACTION)) {
                 Log.d(TAG, "long?");
-                this.ctx.runOnUiThread(new Runnable() {
+                cordova.getActivity().runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
                         toast = Toast.makeText(((Activity)ctx), toastMessage, Toast.LENGTH_LONG);
@@ -47,7 +47,7 @@ public class ToastPlugin extends Plugin {
                     }
                 });
             } else {
-                this.ctx.runOnUiThread(new Runnable() {
+                cordova.getActivity().runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
                         toast = Toast.makeText(((Activity)ctx), toastMessage, Toast.LENGTH_SHORT);
