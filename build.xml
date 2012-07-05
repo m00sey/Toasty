@@ -83,6 +83,7 @@
 	<!-- additional tasks to package the plugin separate from the example application -->
 	
 	<property name="dist.dir" value="dist"/>
+	<property name="renderscript.opt.level" value="O0" />
     
 	<target name="jar" depends="-compile" description="build a new version of plugin jar">
       <jar destfile="${dist.dir}/phonegap-toast.jar" basedir="${out.dir}/classes" 
