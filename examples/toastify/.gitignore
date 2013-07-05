@@ -1,0 +1,4 @@
+platforms/android/bin
+platforms/android/gen
+platforms/android/assets/www
+.cordova
