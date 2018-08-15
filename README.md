@@ -25,6 +25,6 @@ or if you're using cordova-cli
 
     $ cordova plugin install /path/to/toasty
 
-Once the the plugin is installed, toast will be available on the document object. There is no need to modify your javascript imports.
+Once the plugin is installed, toast will be available on the document object. There is no need to modify your javascript imports.
     
     toast.showLong("hello, world");
